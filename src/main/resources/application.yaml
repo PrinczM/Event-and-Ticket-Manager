@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: eventmanager
+  datasource:
+    url: jdbc:mysql://${DB_HOST:localhost}:3306/eventdb
+    username: root
+    password: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+
+server:
+  port: 8080
