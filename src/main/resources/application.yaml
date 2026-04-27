@@ -13,9 +13,6 @@ spring:
     properties:
       hibernate:
         format_sql: true
-  jackson:
-    serialization:
-      write-dates-as-timestamps: false
 
 server:
   port: 8080

@@ -40,6 +40,7 @@ public class Event {
   @Column(nullable = false)
   private Integer capacity;
 
+  @Builder.Default
   @OneToMany(mappedBy = "event")
   private List<Ticket> tickets = new ArrayList<>();
 
